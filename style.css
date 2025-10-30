@@ -7,7 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;
-    color: #333333;
+    color: #333;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -24,7 +24,7 @@ img {
 
 /* ========== HEADER ========== */
 header {
-    background: #111111;
+    background: #111;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,7 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* ========== HOME SECTION ========== */
+/* ========== HERO SECTION ========== */
 .home {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
         url('https://images.unsplash.com/photo-1581091870622-3b4c540c1b5e') center/cover no-repeat;
@@ -86,9 +86,9 @@ nav a:hover::after {
 }
 
 .home a {
-    background-color: #ffd700;
-    color: #111111;
-    padding: 0.9rem 1rem;
+    background: #ffd700;
+    color: #111;
+    padding: 0.9rem 2rem;
     border-radius: 50px;
     font-weight: bold;
     transition: 0.3s;
@@ -96,19 +96,19 @@ nav a:hover::after {
 }
 
 .home a:hover {
-    background: #ffffff;
-    color: #111111;
+    background: #fff;
+    color: #111;
     transform: scale(1.05);
 }
 
 /* ========== FEATURES ========== */
-section {
+.features {
     padding: 5rem 2rem;
     text-align: center;
     background: #fff;
 }
 
-.heading {
+.heading{
     font-size: 2rem;
     margin-bottom: 2rem;
     color: #111;
@@ -145,8 +145,13 @@ section {
 }
 
 /* ========== PRODUCT / PRICING ========== */
+.pricing {
+    background: #f4f4f9;
+    padding: 5rem 2rem;
+    text-align: center;
+}
 
-.price-cards{
+.price-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -154,7 +159,7 @@ section {
     margin-top: 3rem;
 }
 
-.card{
+.card {
     background: white;
     border-radius: 15px;
     padding: 2rem;
@@ -163,28 +168,28 @@ section {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.card h3{
+.card h3 {
     color: #ffd700;
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
 }
 
-.card p.price{
+.card p.price {
     font-size: 1.8rem;
-    color: #111111;
+    color: #111;
     margin: 1rem 0;
     font-weight: bold;
 }
 
-.card button{
+.card button {
     background: #ffd700;
     border: none;
-    color: #111111;
+    color: #111;
     padding: 0.8rem 1.5rem;
     border-radius: 30px;
     cursor: pointer;
@@ -192,43 +197,53 @@ section {
     transition: 0.3s;
 }
 
-.card button:hover{
-    background: #111111;
+.card button:hover {
+    background: #111;
     color: #ffd700;
 }
-form{
-    background: #f9f9f9;
-    border-radius: 10px;
-    padding: 2rem;
+
+/* ========== CONTACT ========== */
+.contact {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: white;
+}
+
+form {
     margin: 2rem auto;
     max-width: 400px;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-label{
+label {
     font-weight: bold;
     display: block;
     margin-top: 1rem;
 }
 
-input, textarea{
+input,
+textarea {
     width: 100%;
     padding: 0.8rem;
     margin-top: 0.5rem;
     border-radius: 8px;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     font-family: inherit;
 }
-form button{
+
+form button {
     margin-top: 1rem;
     width: 100%;
+    background: #111;
+    color: #fff;
     padding: 0.8rem;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     font-weight: bold;
-    color: #ffffff;
-    background: #111111;
     transition: 0.3s;
 }
 
@@ -237,32 +252,32 @@ form button:hover {
     color: #111;
 }
 
-/*footer*/
-
-footer{
-    background: #111111;
-    color: #cccccc;
+/* ========== FOOTER ========== */
+footer {
+    background: #111;
+    color: #ccc;
     text-align: center;
     padding: 1.5rem;
     margin-top: 3rem;
 }
 
-footer a{
+footer a {
     color: #ffd700;
     font-weight: bold;
 }
-footer a:hover{
+
+footer a:hover {
     text-decoration: underline;
 }
 
 /* ========== RESPONSIVE ========== */
-@media(max-width:770px){
-    header{
+@media (max-width: 768px) {
+    header {
         flex-direction: column;
         text-align: center;
     }
 
-    .home h2{
+    .home h2 {
         font-size: 2rem;
     }
 
